@@ -36,7 +36,7 @@ public class ProductoController {
     public void SortByPriceSelection(Producto[]productos){
         for(int i=0;i<productos.length;i++){
             int indiceMenor=i;
-            for(int j=0;j<productos.length;j++){
+            for(int j=i + 1;j<productos.length;j++){
                 if(productos[j].getPrecio()>productos[indiceMenor].getPrecio()){
                     indiceMenor=j;
                 }
